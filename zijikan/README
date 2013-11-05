@@ -1,0 +1,32 @@
+1.ffmpeg-1.0.7 生成.a静态文件
+
+2.github不能上传100M以上文件，所以做了分割
+[root]# du -b file  
+116616  file   
+将其分割为两文件file1和file2，那我们就设置每块为1024字节，将file的前60块放入file1，余下的放入file2：
+[root]# dd if=file bs=1024 count=60 skip=0  of=file1  
+[root]# dd if=file bs=1024 count=60 skip=60 of=file2   
+然后用cat将两个文件合并为file.bak，要注意文件的顺序：
+[root]# cat file1 file2 > file.bak  
+可以用md5sum验证一下file和file.bak：
+[root]# md5sum file  
+3ff53f7c30421ace632eefff36148a70  file  
+[root]# md5sum file.bak  
+3ff53f7c30421ace632eefff36148a70  file.bak   
+可以证明两个文件时完全相同的。
+
+将大文件libavcodec.a的两个碎片合并
+dd if=libavcodec.a bs=1024*1024 count=50 skip=0 of=libavcodec.a.part1
+dd if=libavcodec.a bs=1024*1024 count=50 skip=50 of=libavcodec.a.part2
+dd if=libavcodec.a bs=1024*1024 count=50 skip=100 of=libavcodec.a.part3
+
+cat libavcodec.a.part1 libavcodec.a.part2 libavcodec.a.part3 > libavcodec.a.bak
+md5 libavcodec.a
+md5 libavcodec.a.bak
+
+#mv libavcodec.a.bak libavcodec.a
+
+3.
+.gitignore
+
+libavcodec.a
