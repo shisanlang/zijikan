@@ -10,29 +10,29 @@
 	<string>zijikan</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>80C4ADD1-6579-4132-8E91-74C8BD977A1E</key>
-		<string>ssh://github.com/shisanlang/zijikan.git</string>
+		<key>3DA4E98FFFC8BC1CCAF447886681588570D42516</key>
+		<string>https://github.com/shisanlang/zijikan.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>zijikan.xcodeproj/project.xcworkspace</string>
+	<string>zijikan.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>80C4ADD1-6579-4132-8E91-74C8BD977A1E</key>
+		<key>3DA4E98FFFC8BC1CCAF447886681588570D42516</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/shisanlang/zijikan.git</string>
+	<string>https://github.com/shisanlang/zijikan.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>80C4ADD1-6579-4132-8E91-74C8BD977A1E</string>
+	<string>3DA4E98FFFC8BC1CCAF447886681588570D42516</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>80C4ADD1-6579-4132-8E91-74C8BD977A1E</string>
+			<string>3DA4E98FFFC8BC1CCAF447886681588570D42516</string>
 			<key>IDESourceControlWCCName</key>
 			<string>zijikan</string>
 		</dict>
